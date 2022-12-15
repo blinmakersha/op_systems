@@ -1,0 +1,4 @@
+[webservers]
+web1 ansible_host=127.0.0.1 ansible_port=2200 ansible_private_key_file=/home/sirius/os_labs/lab6/.vagrant/machines/web1/virtualbox/private_key
+web2 ansible_host=127.0.0.1 ansible_port=2201 ansible_private_key_file=/home/sirius/os_labs/lab6/.vagrant/machines/web2/virtualbox/private_key
+rrobin ansible_host=127.0.0.1 ansible_port=2202 ansible_private_key_file=/home/sirius/os_labs/lab6/.vagrant/machines/rrobin/virtualbox/private_key 
