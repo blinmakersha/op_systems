@@ -1,0 +1,6 @@
+---
+- name: restart rrobin
+  systemd:
+        name: rrobin
+        state: restarted
+        enabled: yes

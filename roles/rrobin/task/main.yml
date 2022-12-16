@@ -1,0 +1,7 @@
+---
+- name: config rrobin
+  template:
+    src: rrobin.cfg.j2
+    dest: /etc/rrobin/rrobin.cfg
+  notify:
+    - Restart rrobin

@@ -16,17 +16,11 @@
     tags:
       - nginx-package
       - packages
-  - name: Create config file from template 
-    template:
-      src: nginx.conf.j2 
-      dest: /etc/nginx/nginx.conf 
-    notify:
-      - restart nginx 
-    tags:
-      - nginx-configuration
-  handlers:
-    - name: restart nginx 
-      systemd:
-        name: nginx
-        state: restarted
-        enabled: yes
+  - name: Nginx
+    hosts: web
+    roles:
+      - web_nginx
+  - name: Nginx
+    hosts: rrobin
+    roles:
+      - rrobin
